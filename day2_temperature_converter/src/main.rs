@@ -128,7 +128,7 @@ fn kelvin_to_fahrenheit() {
 }
 
 fn fahrenheit_to_kelvin() {
-    println!("Enter temperature in Fahrenheit:");
+    println!("Please Enter temperature in Fahrenheit:");
 
     let mut temp = String::new();
     io::stdin().read_line(&mut temp).expect("Failed to read input");

@@ -33,9 +33,26 @@ fn main() {
     // Count Words
     let word_count = count_words(&contents);
     println!("✅ Word Count: {}", word_count);
+
+    // Count Lines
+    let line_count = count_lines(&contents);
+    println!("✅ Line Count: {}", line_count);
+
+    // Count Characters 
+    let char_count = count_char(&contents);
+    println!("✅ Character Count: {}", char_count);
+    
 }
 
 fn count_words(text: &str) -> usize {
     text.split_whitespace().count()
+}
+
+fn count_lines(text: &str) -> usize {
+    text.lines().count()
+}
+
+fn count_char(text: &str) -> usize {
+    text.chars().count()
 }
         
